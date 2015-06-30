@@ -1,13 +1,17 @@
 {
   "name": "tastespoon-socket.io",
   "version": "0.1.0",
-  "description": "",
+  "description": "TasteSpoon (Infrastructure behavior testing framework) plugin for socket.io",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "tsd reinstall && tsd rebundle && tsc -m commonjs -t ES5 --outDir lib src/index.ts",
     "test:integration": "mocha --compilers ts:espower-typescript/guess test/integration/*.test.ts"
   },
   "author": "Rize MISUMI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MisumiRize/tastespoon-socket.io"
+  },
   "license": "MIT",
   "devDependencies": {
     "espower-typescript": "^0.1.1",

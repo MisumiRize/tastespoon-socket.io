@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: iojs-v1.3.0
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - ~/.tsd-cache
+  pre:
+    - docker build --rm -t socket_io test/docker
+    - npm install
+
+test:
+  pre:
+    - docker run -d -p 8080:8080 socket_io
+  override:
+    - npm run test:integration
