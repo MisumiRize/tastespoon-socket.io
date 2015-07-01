@@ -2,6 +2,12 @@
   "name": "tastespoon-socket.io",
   "version": "0.1.0",
   "description": "TasteSpoon (Infrastructure behavior testing framework) plugin for socket.io",
+  "keywords": [
+    "server",
+    "infrastructure",
+    "test",
+    "socket.io"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "tsd reinstall && tsd rebundle && tsc -m commonjs -t ES5 --outDir lib src/index.ts",
