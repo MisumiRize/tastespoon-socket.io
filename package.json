@@ -9,6 +9,9 @@
     "socket.io"
   ],
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "prepublish": "tsd reinstall && tsd rebundle && tsc -m commonjs -t ES5 --outDir lib src/index.ts",
     "test:integration": "mocha --compilers ts:espower-typescript/guess test/integration/*.test.ts"
